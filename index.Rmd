@@ -66,11 +66,13 @@ library(readr)
 contenturl <- 'https://docs.google.com/spreadsheets/d/1OS48G1jEBcArDIN76jh5PFHGoJSeqfGSTE23ve7lfjk/edit?usp=sharing'
 #make into sheet
 sMRI <- gsheet2tbl(contenturl)
+#remove url creation columns
+selectsMRI <- select(sMRI, -c("Link Title","raw url"))
 
 ```
 
 ```{r, echo=FALSE}
-collapsibleTree(sMRI, c("Section", "Node"), collapsed = FALSE)
+collapsibleTree(sMRI, c("Section", "Node","Link Title"), collapsed = FALSE)
 ```
 
 ### Resources
