@@ -32,7 +32,7 @@ Welcome to the MRI overview in flowcharts project. Our goal: Bring newcomers tog
 | Tuba Sahin       |          | tubasahin.psyc@gmail.com          | tubapona  |              |
 | Hulya Aldemir    |          | hulyaald@gmail.com                | hulyaald  |              |
 | Dara Ghahremani  |          | darag@ucla.edu                    | daraucla  | UC Los Angeles                  |
-| Neha Sara John   |          | nehasjohn1d@gmail.com             | NSJohn    |              |
+| Neha Sara John   |          | nehasjohn1d@gmail.com             | NSJohn    |  Ramaiah Institute of Technology - Bangalore            |
 | Ginnie Kim       |          |ginnie.kim@nationwidechildrens.org | ginniekim | Nationwide Children's Hospital  |
 
 
