@@ -71,12 +71,8 @@ selectsMRI <- select(sMRI, -c("Link Title","raw url"))
 
 ```
 
-```{r, echo=FALSE}
-collapsibleTree(sMRI, c("Section", "Node","Link Title"), collapsed = FALSE)
-```
-
-```{r, echo=FALSE}
- 
+```{r, echo=FALSE, warning=FALSE}
+options(dplyr.summarise.inform = FALSE)
 sMRI %>%
   group_by(Section, Node) %>%
   summarize(`Number of Processes` = n()) %>%
