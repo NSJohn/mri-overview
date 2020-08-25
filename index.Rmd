@@ -75,6 +75,20 @@ selectsMRI <- select(sMRI, -c("Link Title","raw url"))
 collapsibleTree(sMRI, c("Section", "Node","Link Title"), collapsed = FALSE)
 ```
 
+```{r, echo=FALSE}
+ 
+sMRI %>%
+  group_by(Section, Node) %>%
+  summarize(`Number of Processes` = n()) %>%
+  collapsibleTreeSummary(
+    hierarchy = c("Section", "Node"),
+    root = "sMRI",
+    width = 800,
+    attribute = "Number of Processes",
+    zoomable = FALSE
+  )
+```
+
 ### Resources
 <div style="margin-bottom:50px;">
 </div>
